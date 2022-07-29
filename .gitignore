@@ -1,3 +1,5 @@
+tcp_server
+.vs*
 # Prerequisites
 *.d
 
