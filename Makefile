@@ -14,8 +14,8 @@ OBJECTS=$(SOURCES:.cpp=.o)
 all: $(SOURCES) $(PROJECT_NAME)
 
 $(PROJECT_NAME): $(OBJECTS)
-	$(CC) -g $(OBJECTS) $(LDFLAGS) -o $@
+	$(CC) $(OBJECTS) $(LDFLAGS) -o $@
 	rm *.o
 
 .cpp.o:
-	$(CC) -g $(CFLAGS) $(INCLUDE_DIRS) $< -o $@
+	$(CC) $(CFLAGS) $(INCLUDE_DIRS) $< -o $@
